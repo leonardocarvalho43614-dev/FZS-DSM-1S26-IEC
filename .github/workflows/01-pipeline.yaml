@@ -1,0 +1,8 @@
+on: push
+jobs:
+  minha_tentativa_no_jobs:
+    runs-on: ubuntu-latest
+            # ubunto-24.4,
+    steps:
+      - run: echo "Olá, Fatec!"
+  
