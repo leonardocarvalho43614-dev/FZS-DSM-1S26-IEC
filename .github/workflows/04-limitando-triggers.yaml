@@ -1,0 +1,11 @@
+name: Pipeline Limitando Triggers:
+on:
+  push:
+    branches: #[main, develop]
+      - main
+      - develop
+jobs:
+  outro-job: Teste
+  runs-on: ubuntu-lateste
+  steps:
+    - run: echo "oi"
