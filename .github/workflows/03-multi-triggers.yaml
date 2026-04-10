@@ -1,0 +1,24 @@
+name: Pipeline Multi Triggers
+on: push
+jobs: 
+  ci-continuos-integration:
+    name: teste de CI 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mensagem Especial
+        run: echo "Olá, Fatec!"
+        
+      - name: Fazendo clone e checkout do meu repositório
+        uses: actions/checkout@v5
+
+      - name: Boa tarde!
+        run: echo "Fatec ZS"
+
+      - name: finalizado
+        run: echo "Finalizado"
+
+      - name: Rodando Erro
+        run: Clark-Creme 
+      
+    
+    
